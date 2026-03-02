@@ -45,7 +45,13 @@ export default function Home() {
           <header className="card-header">
             <h2>Order items</h2>
             <button type="button" className="edit-link">
-              &#9998; Edit shopping cart
+              <span className="edit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M4 20h4l10.2-10.2-4-4L4 16v4Z" />
+                  <path d="m13.5 6.5 4 4" />
+                </svg>
+              </span>
+              Edit shopping cart
             </button>
           </header>
 
