@@ -9,7 +9,10 @@ export default function Home() {
             </button>
             <div className="brand-mark">2019</div>
             <button className="menu-link" type="button" aria-label="Open menu">
-              &#9776;
+              <span className="menu-icon" aria-hidden="true">
+                <span />
+                <span />
+              </span>
             </button>
           </div>
 
@@ -136,21 +139,30 @@ export default function Home() {
       <section className="bottom-features">
         <div className="feature-item">
           <span className="feature-icon" aria-hidden="true">
-            &#128274;
+            <svg viewBox="0 0 24 24" role="presentation">
+              <rect x="6" y="10" width="12" height="9" rx="1.5" />
+              <path d="M8.5 10V8a3.5 3.5 0 0 1 7 0v2" />
+            </svg>
           </span>
           <h3>Your information is Safe</h3>
           <p>The total cost consist of the tax, insurance and the delivery charge.</p>
         </div>
         <div className="feature-item">
           <span className="feature-icon" aria-hidden="true">
-            &#128737;
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 4 18 6.4V11c0 4-2.4 6.6-6 8-3.6-1.4-6-4-6-8V6.4L12 4Z" />
+              <path d="m9.3 11.8 1.9 1.9 3.5-3.5" />
+            </svg>
           </span>
           <h3>Secure checkout</h3>
           <p>The total cost consist of the tax, insurance and the delivery charge.</p>
         </div>
         <div className="feature-item">
           <span className="feature-icon" aria-hidden="true">
-            &#127911;
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M5 13a3 3 0 1 0 0 6h1v-6H5Zm14 0a3 3 0 1 1 0 6h-1v-6h1Z" />
+              <path d="M6 13V11a6 6 0 0 1 12 0v2" />
+            </svg>
           </span>
           <h3>24/7 Support</h3>
           <p>The total cost consist of the tax, insurance and the delivery charge.</p>

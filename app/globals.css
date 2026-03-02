@@ -67,8 +67,26 @@ body {
 }
 
 .menu-link {
-  color: #d6daf5;
-  font-size: 18px;
+  width: 88px;
+  height: 56px;
+  background: #09177d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  width: 18px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon span {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f789f;
 }
 
 .brand-mark {
@@ -156,7 +174,7 @@ body {
 .card-header h2,
 .summary-card h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 16px;
   color: #1e2a78;
   font-weight: 800;
 }
@@ -315,36 +333,38 @@ body {
 
 .delivery-card {
   width: 100%;
-  min-height: 72px;
-  padding: 0 22px;
+  min-height: 66px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #2b377a;
-  font-size: 26px;
-  font-weight: 800;
+  color: #4b5586;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .delivery-card .plus {
-  width: 28px;
-  height: 28px;
-  border: 1px solid #d8dcee;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d3d8ea;
   border-radius: 50%;
-  font-size: 21px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #8f96b4;
+  color: #7e88b1;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .next-step-button {
   width: 100%;
-  min-height: 66px;
+  min-height: 60px;
   border-radius: 3px;
   background: var(--blue-dark);
   color: #f3f5ff;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .bottom-features {
@@ -363,12 +383,23 @@ body {
 
 .feature-icon {
   display: inline-flex;
-  color: var(--accent);
-  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  color: #ecb54a;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .feature-item h3 {
-  margin: 12px 0 8px;
+  margin: 10px 0 8px;
   color: #26357f;
   font-size: 22px;
   font-weight: 800;
